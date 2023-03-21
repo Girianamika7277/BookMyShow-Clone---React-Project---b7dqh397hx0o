@@ -1,0 +1,151 @@
+/* @import "../node_modules/bootstrap/scss/bootstrap" */
+
+#nav-bar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: rgb(37, 22, 82);
+    color: white;
+}
+
+.input-container{
+    position: relative;
+    left: 20rem;
+    top: 2rem;
+    padding: 10px;
+}
+.input-container>input{
+    height: 34px;
+    border-radius: 10px;
+}
+
+.right-side {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.giveSameStyle {
+    margin: 0 1.5rem;
+    cursor: pointer;
+}
+
+.logo {
+    margin: 0 2rem;
+}
+
+.scarchClass {
+    margin: 0 0.3rem;
+    border-radius: 3px;
+}
+
+.searchBar {
+    border: 1px solid white;
+    height: 1rem;
+    width: 20rem;
+    padding: 0 5px;
+    outline: none;
+}
+
+.searchButton {
+    height: 2rem;
+    width: 5rem;
+    border-radius: 10px;
+    background-color: rgb(245, 237, 237);
+    color: rgb(8, 8, 8);
+    cursor: pointer;
+    box-shadow: 0px 0px 3px 0px white;
+}
+
+.loginInfo {
+    padding: 3px;
+    width: 15rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid white; */
+    align-items: center;
+    border-radius: 60px;
+    background-color: rgb(19, 17, 17);
+    transition: box-shadow 0.5s ease-in-out;
+}
+.loginInfo:hover{
+    box-shadow: 0px 1px 5px 0px white;
+}
+
+.heart{ 
+    color: red;
+    
+}
+
+
+.linkLogo {
+    width: 150px;
+    cursor: pointer;
+}
+
+.login-wraper {
+    position: relative;
+    right: 3rem;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+/* (min-width:375px) and  */
+@media only screen and (max-width:768px) {
+    .logo {
+        margin: 0 0.5rem;
+    }
+
+    #nav-bar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .right-side {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .searchBar {
+        width: 100%;
+    }
+
+    .searchButton {
+        display: none;
+    }
+
+    .input-container {
+        display: flex;
+        align-items: center;
+        width: 90%;
+        margin: 0;
+    }
+
+    .login-wraper {
+        display: flex;
+        margin: 10px;
+        width: 100%;
+        position: relative;
+    }
+
+    .loginInfo {
+        position: absolute;
+        right: 0px;
+    }
+}
+/* (min-width:280px) and  */
+@media only screen and (max-width:375px) {
+
+
+}
+
+@media only screen and (min-width:820px) and (max-width:1024px) {
+    .searchButton {
+        display: none;
+    }
+}
