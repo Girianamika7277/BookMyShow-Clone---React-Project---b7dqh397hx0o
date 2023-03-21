@@ -4,19 +4,16 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-    background-color: rgb(37, 22, 82);
-    color: white;
 }
 
-.input-container{
-    position: relative;
-    left: 20rem;
-    top: 2rem;
-    padding: 10px;
-}
-.input-container>input{
-    height: 34px;
-    border-radius: 10px;
+.styleNavBar {
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    background: white;
+    z-index: 1000;
+    width: 100%;
 }
 
 .right-side {
@@ -41,44 +38,27 @@
 }
 
 .searchBar {
-    border: 1px solid white;
-    height: 1rem;
+    box-shadow: 0 0px 0px 2px lightblue;
+    border: none;
+    height: 1.5rem;
     width: 20rem;
     padding: 0 5px;
     outline: none;
 }
 
 .searchButton {
-    height: 2rem;
-    width: 5rem;
-    border-radius: 10px;
-    background-color: rgb(245, 237, 237);
-    color: rgb(8, 8, 8);
+    height: 1.8rem;
+    background-color: white;
+    border: 1px solid rgb(48, 210, 255);
+    color: rgb(48, 210, 255);
     cursor: pointer;
-    box-shadow: 0px 0px 3px 0px white;
 }
 
 .loginInfo {
-    padding: 3px;
-    width: 15rem;
-    height: 3rem;
-    display: flex;
-    justify-content: center;
-    /* border: 1px solid white; */
-    align-items: center;
-    border-radius: 60px;
-    background-color: rgb(19, 17, 17);
-    transition: box-shadow 0.5s ease-in-out;
+    padding: 2px;
+    border: 1px solid black;
+    border-radius: 4px;
 }
-.loginInfo:hover{
-    box-shadow: 0px 1px 5px 0px white;
-}
-
-.heart{ 
-    color: red;
-    
-}
-
 
 .linkLogo {
     width: 150px;
@@ -86,9 +66,6 @@
 }
 
 .login-wraper {
-    position: relative;
-    right: 3rem;
-    font-size: 18px;
     display: flex;
     align-items: center;
 }

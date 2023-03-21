@@ -4,7 +4,7 @@ import { Genres } from "./BookMyShow/Genres/Genres";
 import { Movies } from "./BookMyShow/Movies/Movies";
 import { NavBar } from "./BookMyShow/NavBar/NavBar";
 import { TicketBooking } from "./BookMyShow/TicketBooking/TicketBooking";
-import { apiUrl } from "./important/api";
+import { apiUrl } from "./importent/api";
 import { Overlay } from "./OverLay/Overlay";
 import apicalls from "./utills/apicalls";
 import deBounce from "./utills/deBounce";
@@ -111,6 +111,15 @@ export function Home() {
     }
   
   }
+
+  const sortFun = () => {
+    const temp = playNowList;
+    const temp1 = temp.sort((a,b) => {
+      return b.vote_average - a.vote_average
+    })
+    setPlayNowList([...temp1])
+  }
+
   // sessionStorage.clear()
   return (
     <>
@@ -126,6 +135,7 @@ export function Home() {
               imagePath={apiUrl.imageBase}
               apiData={playNowList}
               flagStatus={stateUpLift}
+              sortFun = {sortFun}
             />
           </div>
         )}

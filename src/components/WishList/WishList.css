@@ -1,24 +1,12 @@
 .wraper-card {
     display: flex;
-    padding: 10px;
-    margin: 30px;
-    background-color: aliceblue;
-    box-shadow: 0 0 3px 3px rgb(100, 187, 230);
-    height: 300px;
-    width: 600px;
+    margin: 10px;
+    box-shadow: 0 0 3px 3px rgb(125, 184, 246);
 }
 
 .wraper-card > img {
     width: 150px;
-    height: 180px;
-    margin: 20px;
-}
-
-.wraper-card:hover{
-    box-shadow: 1px 1px 10px 0px white;
-    border-radius: 5px;
-    scale: 1.1;
-    filter: drop-shadow(0 0 22px rgb(162, 174, 216));
+    margin: 5px;
 }
 
 .wrapper-wishlist {
@@ -28,6 +16,4 @@
 
 .wrap-wishlist-data {
     margin: 5px;
-    height: 400px;
-    width: 300px;
 }

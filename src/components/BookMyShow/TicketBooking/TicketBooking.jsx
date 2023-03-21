@@ -24,7 +24,6 @@ export function TicketBooking(props) {
   };
 
   const dateOfBooking = (e) => {
-    console.log(e.target.value)
     setDate(e.target.value);
   }
 

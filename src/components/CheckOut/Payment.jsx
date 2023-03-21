@@ -5,9 +5,9 @@ export function Payment() {
     e.preventDefault();
   };
   return (
-    <div className="summary summary-slip">
+    <div className="summary-slip">
       <h2>Payment</h2>
-      <form className="form" onSubmit={submitHandler}>
+      <form onSubmit={submitHandler}>
         <div className="input-fields user-name-email">
           <div className="input1">
             <label htmlFor="first-name">First Name</label>

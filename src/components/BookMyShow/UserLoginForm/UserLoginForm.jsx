@@ -62,7 +62,7 @@ export function UserLoginForm(props) {
   };
 
   return (
-    <form onSubmit={submitHandler} className="login1 login-form">
+    <form onSubmit={submitHandler} className="login-form">
       <div className="login-logo">
         <BsShieldLock style={{ fontSize: "2rem" }} />
       </div>

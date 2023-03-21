@@ -88,29 +88,29 @@ export function UserSignUpForm(props) {
     <div className="wraper-div">
       <form onSubmit={submitHandler} className="login-form">
         <div className="login-logo">
-          <BsShieldLock style={{  fontSize: "2rem" }} />
+          <BsShieldLock style={{ fontSize: "2rem" }} />
         </div>
-        <h3 className="user-heading">Sign Up</h3>
+        <h3 className="user-heading">Sing Up</h3>
         {infoExist && (
           <div className="warning">Username or email already exists</div>
         )}
         <input
           type="text"
-          placeholder="USERNAME*"
+          placeholder="User Name*"
           onChange={userInputHandler}
           value={userName}
         />
         {userFlag && <div className="warning">Please Enter User Name</div>}
         <input
           type="email"
-          placeholder="EMAIL*"
+          placeholder="email*"
           onChange={emailInputHandler}
           value={email}
         />
         {emailFlag && <div className="warning">Please Enter User Name</div>}
         <input
           type="password"
-          placeholder="PASSWORD*"
+          placeholder="password*"
           onChange={passwordInputHandler}
           value={password}
         />
@@ -118,7 +118,7 @@ export function UserSignUpForm(props) {
         <button type="submit">Sign Up</button>
       </form>
       <p className="account-check" onClick={loginFunction}>
-         LOGIN?
+        Already have an account? Login
       </p>
     </div>
   );

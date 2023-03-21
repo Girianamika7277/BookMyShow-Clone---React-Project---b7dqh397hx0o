@@ -1,6 +1,5 @@
 export const apiUrl = {
-    
-    key : "9b25753bfc8c44fdb0023e172d66da6b",
+    key : "166a3b9b31af0579423275527f7ca484",
     base : "https://api.themoviedb.org/3/",
     getGenres : "genre/movie/list",
     nowPlaying : "movie/now_playing",

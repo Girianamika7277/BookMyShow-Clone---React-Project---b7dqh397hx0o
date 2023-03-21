@@ -1,17 +1,13 @@
 .summary-slip {
+    border: 1px solid black;
     height: max-content;
-    color: white;
-    box-shadow: 1px -2px 4px 0px white;
 }
 
 .eachTicket {
     display: flex;
     justify-content: space-between;
 }
-.form>:nth-child(2){
-    display: flex;
-    flex-direction: row;
-}
+
 .wraper-div {
     margin: 10px;
 }
@@ -38,8 +34,6 @@
 
 .input-fields {
     margin: 5px;
-    display: flex;
-    flex-direction: column;
 }
 
 .input-fields > label {
@@ -58,27 +52,23 @@
 .input1 > label {
     margin: 5px;
 }
-#e-mail{
-    position: relative;
-    left: 1.7rem;
-}
+
 .inputs {
+    box-shadow: 0 0 6px 6px rgb(197, 189, 189);
     border: none;
     outline: none;
-    width: 10rem;
     border-radius: 2px;
     margin: 10px 0;
     height: 1.5rem;
 }
 
 .checkout-btn {
-    width: 60%;
-    position: relative;
-    left: 2rem;
-    border-radius: 40px;
+    width: 90%;
     text-align: center;
-    background-color: rgb(38, 38, 39);
+    background-color: rgb(19, 135, 236);
     height: 2rem;
+    border: 1px solid rgb(19, 135, 236);
+    border-radius: 5px;
     color: white;
     font-weight: 500;
 }
@@ -96,7 +86,10 @@
 }
 
 .form-checkout {
+    display: flex;
+    justify-content: center;
     margin: 10px;
+    width: 100%;
 }
 
 @media screen and (max-width:500px) {

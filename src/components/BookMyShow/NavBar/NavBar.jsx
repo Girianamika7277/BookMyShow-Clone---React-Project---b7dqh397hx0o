@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../NavBar/NavBar.css";
 import { FaRegHeart, FaUser } from "react-icons/fa";
-import pngwing from "../../utills/images/bms.png";
+import pngwing from "../../utills/images/pngwing.com.png";
 import { Overlay } from "../../OverLay/Overlay";
 import { UserInfo } from "../UserLoginForm/UserInfo";
 import { NavLink } from "react-router-dom";
@@ -104,8 +104,7 @@ export function NavBar(props) {
                 className="favorite giveSameStyle"
                 onClick={changeStyleAfterClick}
               >
-                <FaRegHeart className="heart" style={styleIcon} />
-                
+                <FaRegHeart style={styleIcon} />
               </div>
             </NavLink>
 
@@ -123,6 +122,7 @@ export function NavBar(props) {
           </div>
         </div>
       </div>
+      <hr />
     </div>
   );
 }

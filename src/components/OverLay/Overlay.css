@@ -7,7 +7,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(18, 18, 17, 0.9);
+    background-color: rgba(0,0,0,0.4);
     z-index: 2000;
     cursor: pointer;
 }
@@ -17,16 +17,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    background-color: rgb(8, 8, 8);
+    background-color: white;
     display: flex;
-    color: white;
-    font-family: 'Courier New', Courier, monospace;
-    box-shadow: 1px 1px 5px 1px black;
-    transition: box-shadow 0.2s ease-out;
-}
-.text:hover{
-    box-shadow: 1px 1px 5px 1px white;
-    border: none;
 }
 
 .text > button {

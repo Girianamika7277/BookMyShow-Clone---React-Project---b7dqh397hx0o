@@ -1,12 +1,14 @@
 import React, { useContext, useState } from "react";
 import "./TicketBooking.css";
 import { UserContex } from "../../Home";
-import { NavLink } from "react-router-dom"
+import { NavLink, useNavigate } from "react-router-dom"
 import { Overlay } from "../../OverLay/Overlay";
 
 export function TheaterSeats(props) {
     const price = useContext(UserContex)
     const [flag,setFlag] = useState(false);
+    const navigate = useNavigate();
+
   let styleSeat = props.Seats.map((item, index, arr) => {
     return arr.map((c, i) => {
       return {
@@ -16,7 +18,6 @@ export function TheaterSeats(props) {
     });
   });
 
-  let seatSelected = [];
 
   const [seatState, setSeatState] = useState([]);
   const [seatSelect, setSeatSelect] = useState(styleSeat);
@@ -36,6 +37,7 @@ export function TheaterSeats(props) {
       );
     });
   };
+
   const SeatNumber = (num, arg2) => {
     let seatSelect1 = seatSelect.map((i, j, arr) => {
       return i.map((l, m) => {
@@ -47,11 +49,11 @@ export function TheaterSeats(props) {
   };
 
   const submitSeatSelected = () => {
-    console.log(typeof(props.BookingDate))
-    // if(props.BookingDate === null){
-    //   setFlag(true);
-    //   return;
-    // }
+
+    if(props.BookingDate === null || seatState.length <= 0){
+      setFlag(true);
+      return;
+    }
 
     const ticketDetails = {
         seats : seatState,
@@ -61,6 +63,7 @@ export function TheaterSeats(props) {
         BookingDate : props.BookingDate
     }
     sessionStorage.setItem('BookingDetails',JSON.stringify(ticketDetails))
+    navigate("/checkout")
 }
 
   const overlayFlagCheck = () => {
@@ -80,10 +83,13 @@ export function TheaterSeats(props) {
       <div className="seat-row">{seatsSection(props.Seats, 7)}</div>
       <div className="seat-row">{seatsSection(props.Seats, 8)}</div>
       <div className="seat-row">{seatsSection(props.Seats, 9)}</div>
-      <NavLink to="/checkout">
+      {/* <NavLink to="/checkout"> */}
       <button className="btn-seat" onClick={submitSeatSelected}>Submit</button>
-      </NavLink>
+      {/* </NavLink> */}
       </div>
+      {flag && <Overlay functionCall={overlayFlagCheck}>
+        <h4 className="over-ticket">Please Fill in all details to Book</h4>
+      </Overlay>}
     </>
   );
 }

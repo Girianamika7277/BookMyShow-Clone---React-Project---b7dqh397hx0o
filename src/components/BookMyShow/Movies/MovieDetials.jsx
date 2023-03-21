@@ -1,5 +1,5 @@
 import React, { createContext, useEffect, useState } from "react";
-import { apiUrl } from "../../important/api";
+import { apiUrl } from "../../importent/api";
 import { FaStar } from "react-icons/fa";
 import apicalls from "../../utills/apicalls";
 import noImage from '../../utills/images/no-image.png'

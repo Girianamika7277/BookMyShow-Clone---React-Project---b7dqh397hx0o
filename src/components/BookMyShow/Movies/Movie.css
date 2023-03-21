@@ -3,40 +3,13 @@
     grid-template-columns: repeat(4,1fr);
     margin: 10px;
     width: 100%;
-    position: relative;
-    right: 10rem;
-    top: 5rem;
 }
 
 .movieCard {
     margin: 10px;
     border-radius: 5px;
-    border: 1px solid white;   
+    box-shadow: 0px 0px 8px 4px gray;
     cursor: pointer;
-    color: #fff;
-    font-size: 1.5rem;
-    transition: box-shadow 0.1s ease-out;
-}
-.movieCard:hover{
-    box-shadow: 1px 1px 10px 0px white;
-    border-radius: 5px;
-    scale: 1.1;
-    filter: drop-shadow(0 0 22px rgb(162, 174, 216));
-}
-.movie-container>h2{
-    font-size: 2rem;
-    position: absolute;
-    top: 6rem;
-    left: 15rem;
-    width: 190px;
-    color: #fff;
-    
-}
-.card{
-    display: flex;
-    flex-direction: column;
-    width: 18rem;
-    
 }
 
 .movieStyleCard {
@@ -53,9 +26,6 @@
 .imageCard {
     width: 90%;
     margin: 5px;
-}
-.movieStyleCard>h4{
-    font-family: 'Courier New', Courier, monospace;
 }
 
 .rating {
@@ -86,15 +56,8 @@ span {
 .buy-wishlist > button {
     margin: 20px 20px 20px 0;
     cursor: pointer;
-    background-color: black;
-    color: #fff;
-    border-radius: 30px;
-    box-shadow: 0px 0px 3px 0px white;
 }
-.buy-wishlist > button:hover{
-    background-color: rgb(232, 220, 220);
-    color: black;
-}
+
 .movie-styles > img {
     width: 300px;
     height: 300px;
@@ -102,7 +65,7 @@ span {
 }
 
 .movieStyleCard > h4 {
-    font-size: 1.3rem;
+    font-size: 1rem;
 }
 
 @media only screen and (max-width:768px) {

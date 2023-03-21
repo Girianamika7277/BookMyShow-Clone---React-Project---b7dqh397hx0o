@@ -1,6 +1,6 @@
 import React from "react";
 import noImage from "../utills/images/no-image.png";
-import { apiUrl } from "../important/api";
+import { apiUrl } from "../importent/api";
 import { FaStar } from "react-icons/fa";
 
 export function WishListCard(props) {
