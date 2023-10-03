@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.login-container {
+    width: 40%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    margin-top: 3.5rem;
+    padding: 1rem;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+.symbol {
+    font-size: 1.5rem;
+    color: black;
+    border-radius: 55%;
+    border: 1px solid black;
+    padding: 0.3rem;
+    background-color: black;
+}
+
+.login-email {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.login-password {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.login-container>h2 {
+    margin: 1rem 0 1rem 0;
+    font-size: 1.5rem;
+}
+
+.login-form>div>label {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.login-form>div>label>span {
+    color: red;
+    font-size: 1.2rem;
+}
+
+.login-form>div>input {
+    width: 25vw;
+    height: 6vh;
+    margin: 0 0 1rem 0;
+    font-size: 1.2rem;
+    padding-left: 0.5rem;
+    border-radius: 0.5rem;
+    border-color: black;
+}
+
+.login-form>div>button {
+    width: 25vw;
+    height: 5vh;
+    color: white;
+    background-color: rgb(25, 118, 210);
+    border-radius: 0.5rem;
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+
+.login-form>div>button:hover {
+    background-color: blue;
+}
+
+.login-account {
+    width: 25vw;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.login-account>p {
+    padding-right: 0.3rem;
+}
+
+@media only screen and (min-width: 100px) and (max-width: 600px) {
+
+    .login-container {
+        width: 90%;
+        height: auto;
+    }   
+    .login-form>div>input {
+        width: 100%;
+    }
+    .login-form>div>button {
+        width: 100%;
+    }
+    .login-account {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

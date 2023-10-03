@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.signup-container {
+    width: 40%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    margin-top: 3.5rem;
+    text-align: center;
+    padding: 1rem;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+.symbol {
+    font-size: 1.5rem;
+    color: black;
+    border-radius: 55%;
+    border: 1px solid black;
+    padding: 0.3rem;
+    background-color: black;
+}
+
+.signup-name {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.signup-email {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.signup-password {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.signup-container>h2 {
+    margin: 1rem 0 1rem 0;
+    font-size: 1.5rem;
+}
+
+.signup-form>div>label {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.signup-form>div>label>span {
+    color: red;
+    font-size: 1.2rem;
+}
+
+.signup-form>div>input {
+    width: 25vw;
+    height: 6vh;
+    margin: 0 0 1rem 0;
+    font-size: 1.2rem;
+    padding-left: 0.5rem;
+    border-radius: 0.5rem;
+    border-color: black;
+}
+
+.signup-form>div>button {
+    width: 25vw;
+    height: 5vh;
+    color: white;
+    background-color: rgb(25, 118, 210);
+    border-radius: 0.5rem;
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+
+.signup-form>div>button:hover {
+    background-color: blue;
+}
+
+.signup-account {
+    width: 25vw;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.signup-account>p {
+    padding-right: 0.3rem;
+}
+
+@media only screen and (min-width: 100px) and (max-width: 600px) {
+
+    .signup-container {
+        width: 90%;
+        height: auto;
+    }
+
+    .signup-form>div>input {
+        width: 100%;
+    }
+    .signup-form>div>button {
+        width: 100%;
+    }
+    .signup-account {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}

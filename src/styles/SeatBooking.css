@@ -1,0 +1,217 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.seatBooking-container {
+    margin: 0.5rem 1rem 0.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.booking-details {
+    display: flex;
+    flex-direction: row;
+    margin: 0.3rem;
+}
+
+.cinema {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.1rem;
+}
+
+.booking-date {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.1rem;
+}
+
+.booking-time {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.1rem;
+}
+
+.cinema>select {
+    margin: 0.5rem 3rem 0.5rem 0;
+    height: 1.5vw;
+    width: 45vh;
+    font-size: 0.9rem;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    cursor: pointer;
+}
+
+.booking-date>input {
+    margin: 0.5rem 3rem 0.5rem 0;
+    height: 1.5vw;
+    width: 45vh;
+    font-size: 0.9rem;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    cursor: pointer;
+}
+
+.booking-time>select {
+    margin: 0.5rem 3rem 0.5rem 0;
+    height: 1.5vw;
+    width: 45vh;
+    font-size: 0.9rem;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    cursor: pointer;
+}
+
+.screen-container {
+    display: flex;
+    justify-content: center;
+}
+
+.screen-container>.na {
+    display: flex;
+    align-items: center;
+}
+
+.screen-container>.na>p {
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 1px solid black;
+    margin-right: 0.5rem;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+
+.selected {
+    display: flex;
+    align-items: center;
+}
+
+.selected>p {
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 1px solid black;
+    margin: 0 0.5rem 0 0.5rem;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    background-color: rgb(3, 198, 252);
+    border: none;
+}
+
+.occupied {
+    display: flex;
+    align-items: center;
+}
+
+.occupied>p {
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 1px solid black;
+    margin: 0 0.5rem 0 0.5rem;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    background-color: rgb(248, 68, 100);
+    border: none;
+}
+
+.screen {
+    border: 1px solid black;
+    width: 65vw;
+    margin: auto;
+    margin-top: 0.8rem;
+    height: 8vh;
+    transform: skew(45deg);
+    background-color: rgb(3, 198, 252);
+    border: none;
+}
+
+.seats {
+    display: flex;
+    margin-top: 1.5rem;
+    justify-content: center;
+
+}
+
+.seats>div>p {
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 1px solid black;
+    margin: 0 0.5rem 0 0.5rem;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    font-size: 0.7rem;
+    align-content: center;
+    padding: 0.15rem;
+    margin-bottom: 0.3rem;
+    cursor: pointer;
+}
+
+.booking-btn {
+    margin: auto;
+}
+
+.booking-btn>button {
+    margin: 0.5rem;
+    width: 10vw;
+    height: 6vh;
+    color: white;
+    border-color: red;
+    background-color: rgb(248, 68, 100);
+    border: none;
+    font-size: 1.1rem;
+    border-radius: 1rem;
+    margin-bottom: 0;
+    cursor: pointer;
+}
+
+.selected-seat {
+    background-color: rgb(3, 198, 252);
+    border: 1px solid rgb(3, 198, 252);
+}
+
+@media only screen and (min-width: 100px) and (max-width: 800px) {
+
+    .booking-details {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+    .cinema>select {
+        height: auto;
+        width: auto;
+    }
+    .booking-date>input {
+        height: auto;
+        width: auto;
+    }
+    .booking-time>select {
+        height: auto;
+        width: auto;
+    }
+    .seats>div>p {
+        width: 1.4rem;
+        height: 1.4rem;
+        margin: 0 0.2rem 0 0.2rem;
+        font-size: 0.6rem;
+        margin-bottom: 0.3rem;
+    }
+    .screen {
+        width: 70%;
+        margin: auto;
+        margin-top: 0.8rem;
+        height: 8vh;
+    }
+    .booking-btn>button {
+        margin: 0.5rem;
+        width: auto;
+        height: auto;
+        font-size: 0.7rem;
+        padding: 0.3rem;
+        border-radius: 0.2rem;
+    }
+    
+}

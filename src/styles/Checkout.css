@@ -1,0 +1,197 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.checkout-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0.5rem 1rem 0.5rem 1rem;
+}
+
+.checkout-details {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+
+.checkout-summary {
+    width: 25vw;
+    height: auto;
+    border: 1px solid black;
+    margin: auto;
+    margin-right: 2rem;
+    padding: 0.8rem;
+}
+
+.checkout-container>button {
+    width: 6vw;
+    height: 4.5vh;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 0.3rem;
+    background-color: teal;
+    color: white;
+}
+
+.checkout-container>button:hover {
+    background-color: rgb(3, 88, 88);
+}
+
+.checkout-summary>h2 {
+    margin: 0.5rem 0;
+}
+
+.checkout {
+    width: 65vw;
+    height: auto;
+    border: 1px solid black;
+}
+
+.ticket-type {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.3rem 0;
+    font-size: 1.1rem;
+}
+
+.noOfTicket {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.3rem 0;
+    font-size: 1.1rem;
+}
+
+.convenience {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.3rem 0;
+    font-size: 1.1rem;
+    margin-bottom: 1.2rem;
+}
+
+.totalamount {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.8rem 0;
+    font-size: 1.1rem;
+    margin-bottom: 1.2rem;
+}
+
+.checkout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.checkout>form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.user-details {
+    display: flex;
+    padding: 0.5rem 0;
+    font-size: 1.1rem;
+}
+
+.user-details>div>label {
+    margin-right: 0.5rem;
+}
+
+.user-details>div>input {
+    margin-right: 0.5rem;
+    width: 15vw;
+    height: 4.5vh;
+    font-size: 1rem;
+    border-radius: 0.2rem;
+    padding: 0 0.5rem;
+    border: 1px solid gray;
+}
+
+.line {
+    width: 100%;
+    margin: 0.3rem 0;
+}
+
+.cardtype {
+    font-size: 1.1rem;
+    margin: 0.6rem 0 0.4rem 0;
+}
+
+.cardtype>input {
+    margin-right: 0.5rem;
+    font-size: 1.3rem;
+}
+
+.cardtype>label {
+    margin-right: 0.8rem;
+}
+
+.checkout>form>label {
+    font-size: 1.1rem;
+    padding: 0.3rem 0;
+}
+
+.checkout>form>input {
+    width: 100%;
+    height: 5.1vh;
+    font-size: 1.1rem;
+    border: 1px solid gray;
+    border-radius: 0.5rem;
+    padding: 0 0.5rem;
+}
+
+.checkout>form>p {
+    padding: 0.2rem 0;
+    color: gray;
+}
+
+.checkout>form>button {
+    width: 100%;
+    height: 6vh;
+    border-radius: 0.5rem;
+    background-color: rgb(13, 110, 253);
+    border: none;
+    margin-top: 0.8rem;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.checkout>form>button:hover {
+    background-color: blue;
+}
+
+
+@media only screen and (min-width: 100px) and (max-width: 800px) {
+
+    .checkout-details {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+    }
+
+    .checkout-summary {
+        width: auto;
+        height: auto;
+        margin: auto;
+        margin-bottom: 1rem;
+    }
+
+    .checkout {
+        width: auto;
+    }
+
+    .checkout-container>button {
+        width: auto;
+        height: auto;
+        font-size: 0.8rem;
+    }
+}

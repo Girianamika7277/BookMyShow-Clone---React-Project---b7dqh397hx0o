@@ -6,14 +6,17 @@
   "scripts": {
     "test": "cypress run  --headless --reporter mochawesome",
     "start": "webpack-dev-server --mode development --watch --open --hot --port=3000",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "deploy": "npm run build && netlify deploy --prod"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "netlify-cli": "^12.9.1",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "react-router-dom": "^6.4.2"
   },
   "jest": {
     "moduleNameMapper": {
