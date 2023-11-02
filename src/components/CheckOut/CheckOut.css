@@ -1,0 +1,251 @@
+.summary-slip {
+    height: max-content;
+    color: white;
+    box-shadow: 1px -2px 4px 0px white;
+}
+
+.eachTicket {
+    display: flex;
+    justify-content: space-between;
+}
+.form>:nth-child(2){
+    display: flex;
+    flex-direction: row;
+}
+.wraper-div {
+    margin: 10px;
+}
+
+.card-name {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.wraper-checkout {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px;
+}
+
+.checkout-heading {
+    text-align: center;
+}
+
+.check-out {
+    width: 100%;
+}
+
+.input-fields {
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-fields > label {
+    margin: 5px;
+}
+
+.user-name-email {
+    display: flex;
+}
+
+.input1 {
+    display: flex;
+    align-items: center;
+}
+
+.input1 > label {
+    margin: 5px;
+}
+#e-mail{
+    position: relative;
+    left: 1.7rem;
+}
+.inputs {
+    border: none;
+    outline: none;
+    width: 10rem;
+    border-radius: 2px;
+    margin: 10px 0;
+    height: 1.5rem;
+}
+
+.checkout-btn {
+    width: 60%;
+    position: relative;
+    left: 2rem;
+    border-radius: 40px;
+    text-align: center;
+    background-color: rgb(38, 38, 39);
+    height: 2rem;
+    color: white;
+    font-weight: 500;
+}
+
+.checkout-btn:hover {
+    width: 90%;
+    text-align: center;
+    background-color: rgb(19, 135, 236);
+    height: 2rem;
+    border: 1px solid rgb(19, 135, 236);
+    border-radius: 5px;
+    color: white;
+    font-weight: 500;
+    box-shadow: 0 0 8px 4px gray;
+}
+
+.form-checkout {
+    margin: 10px;
+}
+
+@media screen and (max-width:500px) {
+    .wraper-checkout {
+        margin: 5px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .summary-slip {
+        margin: 5px;
+    }
+
+    .user-name-email {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .input1 {
+        display: flex;
+        justify-content: space-between;
+        /* align-items: center; */
+    }
+
+    .input1 > input {
+        width: 13rem;
+    }
+
+    .checkout-btn {
+        width: auto;
+        text-align: center;
+        background-color: rgb(19, 135, 236);
+        height: 2rem;
+        border: 1px solid rgb(19, 135, 236);
+        border-radius: 5px;
+        color: white;
+        font-weight: 500;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .wraper-checkout {
+        margin: 5px;
+        display: flex;
+        /* flex-direction: column; */
+    }
+
+    .summary-slip {
+        margin: 5px;
+    }
+
+    .user-name-email {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .input1 {
+        display: flex;
+        justify-content: space-between;
+        /* align-items: center; */
+    }
+
+    .input1 > input {
+        width: auto;
+    }
+
+    .checkout-btn {
+        width: auto;
+        text-align: center;
+        background-color: rgb(19, 135, 236);
+        height: 2rem;
+        border: 1px solid rgb(19, 135, 236);
+        border-radius: 5px;
+        color: white;
+        font-weight: 500;
+    }
+}
+
+@media screen and (max-width:300px) {
+    .wraper-checkout {
+        margin: 5px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .summary-slip {
+        margin: 5px;
+    }
+
+    .user-name-email {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .input1 {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .input1 > input {
+        width: 10rem;
+    }
+
+    .checkout-btn {
+        width: auto;
+        text-align: center;
+        background-color: rgb(19, 135, 236);
+        height: 2rem;
+        border: 1px solid rgb(19, 135, 236);
+        border-radius: 5px;
+        color: white;
+        font-weight: 500;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .wraper-checkout {
+        margin: 5px;
+        display: flex;
+        /* flex-direction: column; */
+    }
+
+    .summary-slip {
+        margin: 5px;
+    }
+
+    .user-name-email {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .input1 {
+        display: flex;
+        justify-content: space-between;
+        /* align-items: center; */
+    }
+
+    .input1 > input {
+        width: 60%;
+    }
+
+    .checkout-btn {
+        width: auto;
+        text-align: center;
+        background-color: rgb(19, 135, 236);
+        height: 2rem;
+        border: 1px solid rgb(19, 135, 236);
+        border-radius: 5px;
+        color: white;
+        font-weight: 500;
+    }
+}

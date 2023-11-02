@@ -1,0 +1,209 @@
+.main-movie-card {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin: 10px;
+    width: 100%;
+    position: relative;
+    right: 10rem;
+    top: 5rem;
+}
+
+.movieCard {
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid white;   
+    cursor: pointer;
+    color: #fff;
+    font-size: 1.5rem;
+    transition: box-shadow 0.1s ease-out;
+}
+.movieCard:hover{
+    box-shadow: 1px 1px 10px 0px white;
+    border-radius: 5px;
+    scale: 1.1;
+    filter: drop-shadow(0 0 22px rgb(162, 174, 216));
+}
+.movie-container>h2{
+    font-size: 2rem;
+    position: absolute;
+    top: 6rem;
+    left: 15rem;
+    width: 190px;
+    color: #fff;
+    
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 18rem;
+    
+}
+
+.movieStyleCard {
+    margin: 10px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.movieStyleCard > h4 {
+    margin: 5px;
+}
+
+.imageCard {
+    width: 90%;
+    margin: 5px;
+}
+.movieStyleCard>h4{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.rating {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 10px;
+}
+
+.rating > p {
+    margin: 0;
+}
+
+.movie-container {
+    margin-left: 12rem;
+    /* width: 100%; */
+}
+
+
+.movie-styles {
+    display: flex;
+    margin: 5px;
+}
+
+span {
+    margin: 10px 5px;
+}
+
+.buy-wishlist > button {
+    margin: 20px 20px 20px 0;
+    cursor: pointer;
+    background-color: black;
+    color: #fff;
+    border-radius: 30px;
+    box-shadow: 0px 0px 3px 0px white;
+}
+.buy-wishlist > button:hover{
+    background-color: rgb(232, 220, 220);
+    color: black;
+}
+.movie-styles > img {
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+}
+
+.movieStyleCard > h4 {
+    font-size: 1.3rem;
+}
+
+@media only screen and (max-width:768px) {
+    .movie-container {
+        margin-left: 0rem;
+        width: 100%;
+    }
+
+    .main-movie-card {
+        grid-template-columns: repeat(2,1fr);
+        margin: 0px;
+        width: 100%;
+    }
+
+    .movieCard {
+        margin: 5px;
+        cursor: pointer;
+        width: 90%;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .movieStyleCard {
+        margin: 0px;
+    }
+
+    .movie-styles > img {
+        width: 150px;
+        height: 150px;
+        margin: 1px;
+    }
+
+    .movie-detils {
+        width: 20rem
+    }
+
+    .movie-styles {
+        flex-wrap: wrap;
+    }
+
+}
+
+@media only screen and (max-width:280px) {
+    .main-movie-card {
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .movie-styles > img {
+        width: 100px;
+        height: 150px;
+        margin: 1px;
+    }
+
+    .movie-detils {
+        width: 16rem
+    }
+
+    .movie-styles {
+        flex-wrap: wrap;
+    }
+    .movie-right-container > p {
+        font-size: 1rem;
+        width: 15rem;
+    }
+
+    .movie-card-text {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    span {
+        margin: 1px 2px;
+    }
+}
+
+@media only screen and (min-width:820px) and (max-width:1024px) {
+    .movie-container {
+        margin-left: 0rem;
+        width: 100%;
+    }
+
+    .main-movie-card {
+        grid-template-columns: repeat(4,1fr);
+        margin: 0px;
+        width: 100%;
+    }
+
+    .movieCard {
+        margin: 5px;
+        cursor: pointer;
+        width: 90%;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .movieStyleCard {
+        margin: 0px;
+    }
+}
+

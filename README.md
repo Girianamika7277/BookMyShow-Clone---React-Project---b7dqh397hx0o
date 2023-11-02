@@ -1,25 +1,20 @@
-# Bookmyshow
-Bookmyshow is a movie ticket booking application built using React. It is a simple application which allows users to search for movies and book tickets for them.
+# boilerplate-react-functional-public
 
-# Tech stack
-- React
+In this app we will be making a Word and Character counter app.
+First there needs to be a <code>textarea</code> element which will take the input
+from user.
 
-# Features
-- Search for movies by title.
-- Filter movies by genre.
-- View movie details such as overview, language, and rating
-- Add and remove favourite movie to the wishlist.
-- Register and login on application.
-- Book movie tickets for one or multiple movies.
-- View ticket details for booked movie.
+Below that element, create 2 divs with id="word-counter" and id="char-counter" respectively.
+#word-counter will show the number of words(empty space is not considered a word) and #char-counter will show the number of characters typed.
 
-## Usage
-1. Search for movies by title, genre.
-2. Filter movies by genre.
-3. View the movie details.
-4. Select the desired movie.
-5. Create account on application and then login.
-6. Select the cinema, date, time and desired seat.
-7. Enter the payment details.
-8. Make the payment
-9. View the ticket details.
+Also make an input with id="char-limit-input" which takes a number which is the limit of characters we can type in.
+By default char limit should be 50.
+
+And the last input should be a slider input(with id ="fontSize-input") for taking the font size, default and min value should be 16px and max would be 32px.
+
+Apply the fontSize property to the textarea element.
+
+
+
+Demo video:-
+<video src="https://d3dyfaf3iutrxo.cloudfront.net/general/upload/e449406acecb4a1186ae9cc77a55933f.mp4" controls autoplay muted>
